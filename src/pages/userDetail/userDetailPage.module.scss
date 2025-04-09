@@ -1,0 +1,45 @@
+@use "../../variables" as v;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: v.$medium-indent;
+}
+
+.userDetail {
+    display: flex;
+    flex-direction: column;
+    gap: v.$large-indent;
+    border: 1px solid v.$color-primary;
+    border-radius: 12px;
+    padding: v.$large-indent;
+    max-width: 400px;
+    color: #61dafb;
+
+    h2 {
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: v.$medium-indent;
+    }
+}
+
+.backButton {
+
+    padding: v.$small-indent v.$medium-indent;
+    background-color: v.$color-primary;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: v.$color-secondary;
+    }
+
+}

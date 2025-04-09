@@ -1,0 +1,25 @@
+@use "../../variables" as v;
+
+.pagination {
+    display: flex;
+    gap: v.$small-indent;
+    justify-content: center;
+
+    button {
+        background: none;
+        border: 1px solid v.$color-primary;
+        padding: v.$small-indent v.$medium-indent;
+        border-radius: v.$small-indent;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:hover {
+            background: v.$color-secondary;
+        }
+
+        &:disabled {
+            opacity: 0.4;
+            cursor: default;
+        }
+    }
+}

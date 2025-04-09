@@ -1,0 +1,21 @@
+@use "../../variables" as v;
+
+.customSelect {
+    display: flex;
+    flex-direction: column;
+    gap: v.$small-indent;
+    width: 220px;
+
+    select {
+        cursor: pointer;
+        padding: v.$small-indent v.$medium-indent;
+        border-radius: 8px;
+        border: 1px solid v.$color-primary;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: v.$color-secondary;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use '../../_variables.scss' as v;
+
+.searchField {
+    padding: v.$small-indent v.$medium-indent;
+    border: 2px solid v.$color-primary;
+    border-radius: v.$large-indent ;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: v.$text-ligth;
+
+    &:focus {
+        border-color: v.$color-secondary;
+    }
+
+    &::placeholder {
+        color: v.$text-ligth;
+        transition: color 0.3s ease;
+    }
+
+    &:focus::placeholder {
+        color: transparent;
+    }
+}

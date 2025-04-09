@@ -1,0 +1,18 @@
+@use '../../../_variables.scss' as v;
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: v.$small-indent;
+    cursor: pointer;
+    border: 1px solid v.$color-primary;
+    border-radius: v.$medium-indent;
+    padding: v.$small-indent;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,8 @@
+@use "../../../variables" as v;
+
+.list {
+    display: flex;
+    gap: v.$small-indent;
+    justify-content: center;
+    flex-wrap: wrap;
+}
